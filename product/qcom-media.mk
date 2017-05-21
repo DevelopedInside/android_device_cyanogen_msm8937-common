@@ -1,5 +1,6 @@
 # Media
 PRODUCT_PACKAGES += \
+    libc2dcolorconvert \
     libextmedia_jni \
     libOmxAacEnc \
     libOmxAmrEnc \
