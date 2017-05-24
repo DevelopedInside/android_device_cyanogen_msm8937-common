@@ -5,5 +5,5 @@ PRODUCT_PACKAGES += \
     libebtc
 
 # QMI
-PRODUCT_PACKAGES += \
-    libjson
+#PRODUCT_PACKAGES += \
+#    libjson

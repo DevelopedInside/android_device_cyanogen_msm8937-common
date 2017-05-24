@@ -17,3 +17,8 @@ MSM_PATH := device/cyanogen/msm8937-common
 
 # Include board config fragments
 include $(MSM_PATH)/board/*.mk
+
+# Inherit from QC proprietary
+ifneq ($(QCPATH),)
+-include $(QCPATH)/common/msm8937/BoardConfigVendor.mk
+endif

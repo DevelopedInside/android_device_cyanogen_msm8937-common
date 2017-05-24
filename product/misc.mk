@@ -1,5 +1,12 @@
-# Data
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/data/dsi_config.xml:system/etc/data/dsi_config.xml \
-    $(LOCAL_PATH)/configs/data/netmgr_config.xml:system/etc/data/netmgr_config.xml \
-    $(LOCAL_PATH)/configs/data/qmi_config.xml:system/etc/data/qmi_config.xml
+# Misc Libraries
+PRODUCT_PACKAGES += \
+    libext2fs \
+    libext2_e2p \
+    libext2_uuid \
+    libmm-omxcore \
+    libext2_com_err \
+    libext2_profile \
+    libext2_quota \
+    libext4_utils \
+    libf2fs \
+    libext2_blkid

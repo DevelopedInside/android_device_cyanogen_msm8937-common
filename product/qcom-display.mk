@@ -4,8 +4,8 @@ PRODUCT_PACKAGES += \
     copybit.msm8937 \
     hwcomposer.msm8937 \
     memtrack.msm8937 \
-    libtinyxml \
-    liboverlay
+    liboverlay \
+    libtinyxml 
 
 # Permissions
 PRODUCT_COPY_FILES += \
