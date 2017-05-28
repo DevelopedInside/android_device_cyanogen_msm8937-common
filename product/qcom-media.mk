@@ -10,5 +10,4 @@ PRODUCT_PACKAGES += \
     libOmxSwVencHevc \
     libOmxVdec \
     libOmxVenc \
-    libOmxVdpp \
     libstagefrighthw
