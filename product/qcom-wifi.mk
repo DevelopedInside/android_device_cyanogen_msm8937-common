@@ -16,8 +16,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     hostapd.accept \
-	hostapd.deny \
-	hostapd_default.conf \
+    hostapd.deny \
+    hostapd_default.conf \
     hostapd \
     wpa_supplicant \
     wpa_supplicant.conf
