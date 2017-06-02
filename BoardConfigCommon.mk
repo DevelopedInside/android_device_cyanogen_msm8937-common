@@ -13,12 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-MSM_PATH := device/cyanogen/msm8937-common
+PLATFORM_PATH := device/cyanogen/msm8937-common
 
 # Include board config fragments
-include $(MSM_PATH)/board/*.mk
-
-# Inherit from QC proprietary
-ifneq ($(QCPATH),)
--include $(QCPATH)/common/msm8937/BoardConfigVendor.mk
-endif
+include $(PLATFORM_PATH)/board/*.mk
