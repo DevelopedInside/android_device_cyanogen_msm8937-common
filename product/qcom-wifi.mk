@@ -12,9 +12,6 @@ PRODUCT_PACKAGES += \
     libwpa_client
 
 PRODUCT_PACKAGES += \
-    dhcpcd.conf
-
-PRODUCT_PACKAGES += \
     hostapd.accept \
     hostapd.deny \
     hostapd_default.conf \

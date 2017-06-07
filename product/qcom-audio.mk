@@ -4,4 +4,7 @@ PRODUCT_PACKAGES += \
     audio.primary.msm8937 \
     libqcompostprocbundle \
     libqcomvisualizer \
-    libqcomvoiceprocessing
+    libqcomvoiceprocessing \
+    libaudio-resampler \
+    libaudioroute \
+    libtinycompress

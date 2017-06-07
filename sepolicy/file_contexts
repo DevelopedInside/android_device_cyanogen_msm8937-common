@@ -1,4 +1,0 @@
-#/system/etc/init\.qcom\.bt\.sh                  u:object_r:bluetooth_loader_exec:s0
-
-#/dev/smd3                                       u:object_r:hci_attach_dev:s0
-
