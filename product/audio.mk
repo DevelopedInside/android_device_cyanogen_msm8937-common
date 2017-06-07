@@ -1,7 +1,6 @@
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
-    audio_policy.msm8937 \
     audio.r_submix.default \
     audio.usb.default \
     tinymix
