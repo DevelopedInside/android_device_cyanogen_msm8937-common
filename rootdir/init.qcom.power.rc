@@ -102,6 +102,7 @@ on enable-low-power
     write /sys/devices/system/cpu/cpu4/cpufreq/interactive/use_migration_notif 1
     write /proc/sys/kernel/sched_freq_inc_notify 50000
     write /proc/sys/kernel/sched_freq_dec_notify 50000
+    
     # Enable core control
     insmod /system/lib/modules/core_ctl.ko
     write /sys/devices/system/cpu/cpu0/core_ctl/min_cpus 2
@@ -116,6 +117,7 @@ on enable-low-power
 
     # Enable dynamic clock gating
     write /sys/module/lpm_levels/lpm_workarounds/dynamic_clock_gating 1
+    
     # Enable timer migration to little cluster
     write /proc/sys/kernel/power_aware_timer_migration 1
 
