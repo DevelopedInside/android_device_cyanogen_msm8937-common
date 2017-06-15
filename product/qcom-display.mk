@@ -4,9 +4,11 @@ PRODUCT_PACKAGES += \
     copybit.msm8937 \
     hwcomposer.msm8937 \
     memtrack.msm8937 \
-    libqdutils \
-    libqdMetaData \
     libtinyxml 
+
+#PRODUCT_PACKAGES += \
+#    libqdutils \
+#    libqdMetaData
 
 # Permissions
 PRODUCT_COPY_FILES += \
