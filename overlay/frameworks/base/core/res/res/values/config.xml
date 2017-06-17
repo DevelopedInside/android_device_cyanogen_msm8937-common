@@ -46,17 +46,17 @@
          does not require auto-restore. -->
     <!-- the 6th element indicates boot-time dependency-met value. -->
     <string-array translatable="false" name="networkAttributes">
-        <item>wifi,1,1,1,-1,true</item>
-        <item>mobile,0,0,0,-1,true</item>
-        <item>mobile_mms,2,0,4,60000,true</item>
-        <item>mobile_supl,3,0,2,60000,true</item>
-        <item>mobile_dun,4,0,2,60000,true</item>
-        <item>mobile_hipri,5,0,3,60000,true</item>
-        <item>mobile_fota,10,0,2,60000,true</item>
-        <item>mobile_ims,11,0,2,60000,true</item>
-        <item>mobile_cbs,12,0,2,60000,true</item>
-        <item>bluetooth,7,7,2,-1,true</item>
-        <item>mobile_emergency,15,0,5,-1,true</item>
+        <item>"wifi,1,1,1,-1,true"</item>
+        <item>"mobile,0,0,0,-1,true"</item>
+        <item>"mobile_mms,2,0,4,60000,true"</item>
+        <item>"mobile_supl,3,0,2,60000,true"</item>
+        <item>"mobile_dun,4,0,2,60000,true"</item>
+        <item>"mobile_hipri,5,0,3,60000,true"</item>
+        <item>"mobile_fota,10,0,2,60000,true"</item>
+        <item>"mobile_ims,11,0,2,60000,true"</item>
+        <item>"mobile_cbs,12,0,2,60000,true"</item>
+        <item>"bluetooth,7,7,2,-1,true"</item>
+        <item>"mobile_emergency,15,0,5,-1,true"</item>
     </string-array>
 
     <!-- This string array should be overridden by the device to present a list of radio
@@ -74,8 +74,8 @@
          bluetooth interfaces.  If the device doesn't want to support tethering over bluetooth this
          should be empty. -->
     <string-array translatable="false" name="config_tether_bluetooth_regexs">
-            <item>"bnep\\d"</item>
-            <item>"bt-pan"</item>
+        <item>"bnep\\d"</item>
+        <item>"bt-pan"</item>
     </string-array>
 
     <!-- Array of ConnectivityManager.TYPE_xxxx values allowable for tethering -->
@@ -141,7 +141,6 @@
          provisioning, availability etc -->
     <bool name="config_carrier_volte_available">true</bool>
 
-
     <string-array name="config_mobile_tcp_buffers">
         <item>lte:2097152,4194304,8388608,262144,524288,1048576</item>
         <item>lte_ca:2097152,4194304,8388608,4096,1048576,2097152</item>
@@ -154,7 +153,6 @@
         <item>gprs:4092,8760,11680,4096,8760,11680</item>
         <item>evdo:4094,87380,524288,4096,16384,262144</item>
     </string-array>
-
 
     <!--  Maximum number of supported users -->
     <integer name="config_multiuserMaximumUsers">4</integer>
@@ -199,4 +197,17 @@
     <!-- Configure wifi tcp buffersizes in the form:
          rmem_min,rmem_def,rmem_max,wmem_min,wmem_def,wmem_max -->
     <string name="config_wifi_tcp_buffers" translatable="false">524288,2097152,4194304,262144,524288,1048576</string>
+
+    <!-- Set to true if the wifi display supports compositing content stored
+         in gralloc protected buffers.  For this to be true, there must exist
+         a protected hardware path for surface flinger to composite and send
+         protected buffers to the wifi display video encoder.
+         If this flag is false, we advise applications not to use protected
+         buffers (if possible) when presenting content to a wifi display because
+         the content may be blanked.
+         This flag controls whether the {@link Display#FLAG_SUPPORTS_PROTECTED_BUFFERS}
+         flag is set for wifi displays.
+    -->
+    <bool name="config_wifiDisplaySupportsProtectedBuffers">true</bool>
+
 </resources>
