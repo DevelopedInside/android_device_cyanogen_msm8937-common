@@ -6,10 +6,6 @@ PRODUCT_PACKAGES += \
     memtrack.msm8937 \
     libtinyxml 
 
-#PRODUCT_PACKAGES += \
-#    libqdutils \
-#    libqdMetaData
-
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.opengles.aep.xml:system/etc/permissions/android.hardware.opengles.aep.xml
