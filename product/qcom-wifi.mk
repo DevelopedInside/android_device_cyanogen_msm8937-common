@@ -1,10 +1,3 @@
-# WCNSS
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini
-
-PRODUCT_PACKAGES += \
-    wcnss_service
-	
 # WiFi
 PRODUCT_PACKAGES += \
     libqsap_sdk \
