@@ -163,7 +163,7 @@
     state changes. Voice radio tech change will always trigger an update of
     phone object irrespective of this config -->
     <bool name="config_switch_phone_on_voice_reg_state_change">false</bool>
-    
+
     <!-- LineageOS config -->
 
     <!-- Whether WiFi display is supported by this device.
@@ -209,5 +209,4 @@
          flag is set for wifi displays.
     -->
     <bool name="config_wifiDisplaySupportsProtectedBuffers">true</bool>
-
 </resources>
