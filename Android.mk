@@ -16,7 +16,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter msm8937 msm8953,$(TARGET_BOARD_PLATFORM_VARIANT)),)
+ifneq ($(filter msm8937 msm8953 msm8940,$(TARGET_BOARD_PLATFORM_VARIANT)),)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
