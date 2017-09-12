@@ -7,4 +7,4 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessing
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/audio/audio_effects.conf:system/vendor/etc/audio_effects.conf 
+    hardware/qcom/audio/configs/$(TARGET_BOARD_PLATFORM_VARIANT)/audio_effects.conf:system/vendor/etc/audio_effects.conf\
