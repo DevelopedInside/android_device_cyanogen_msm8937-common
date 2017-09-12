@@ -111,6 +111,14 @@ on enable-low-power
     write /sys/devices/system/cpu/cpu0/core_ctl/busy_down_thres 40
     write /sys/devices/system/cpu/cpu0/core_ctl/offline_delay_ms 100
     write /sys/devices/system/cpu/cpu0/core_ctl/is_big_cluster 1
+    
+    # add a cpuset for the camera daemon
+    # we want all the cores for camera
+    mkdir /dev/cpuset/camera-daemon
+    chown system system /dev/cpuset/camera-daemon
+    chown system system /dev/cpuset/camera-daemon/tasks
+    chmod 0664 /dev/cpuset/camera-daemon/tasks    
+    write /dev/cpuset/camera-daemon/cpus 0-3
 
     # re-enable thermal core_control now
     write /sys/module/msm_thermal/core_control/enabled 1
