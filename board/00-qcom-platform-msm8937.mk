@@ -17,6 +17,8 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno506
 
 TARGET_BOOTLOADER_BOARD_NAME := msm8953
 endif
+endif
+endif
 
 TARGET_NO_BOOTLOADER := true
 
@@ -45,5 +47,4 @@ TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_VARIANT := cortex-a53
 endif
 
-TARGET_CPU_CORTEX_A53 := true
 ENABLE_CPUSETS := true
