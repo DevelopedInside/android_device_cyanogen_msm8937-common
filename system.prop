@@ -18,6 +18,7 @@ vidc.enc.narrow.searchrange=1
 
 # Bluetooth
 ro.qualcomm.bt.hci_transport=smd
+qcom.bluetooth.soc=smd
 
 # Display
 debug.composition.type=c2d
