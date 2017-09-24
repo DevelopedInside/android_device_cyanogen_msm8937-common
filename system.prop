@@ -70,3 +70,7 @@ persist.timed.enable=true
 
 # WiFi
 wifi.interface=wlan0
+
+# Camera
+#enable camera read sensors data
+persist.camera.gyro.disable=0
