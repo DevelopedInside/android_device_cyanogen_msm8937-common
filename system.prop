@@ -16,7 +16,6 @@ audio.offload.pcm.16bit.enable=false
 audio.offload.pcm.24bit.enable=true
 audio.offload.video=true
 use.voice.path.for.pcm.voip=true
-vidc.enc.narrow.searchrange=1
 
 # Bluetooth
 ro.qualcomm.bt.hci_transport=smd
@@ -28,21 +27,20 @@ debug.sf.gpu_comp_tiling=1
 debug.mdpcomp.idletime=600
 persist.hwc.mdpcomp.enable=true
 persist.hwc.ptor.enable=true
-ro.opengles.version=196609
 debug.enable.sglscale=1
+ro.opengles.version=196609
 
 # GPS
 persist.gps.qc_nlp_in_use=1
 persist.loc.nlp_name=com.qualcomm.location
 ro.gps.agps_provider=1
-#ro.qc.sdk.izat.premium.enabled=0
-#ro.qc.sdk.izat.service_mask=0x0
 
 # Media
 mm.enable.smoothstreaming=true
 mm.disable.sec_smoothstreaming=true
 media.aac_51_output_enabled=true
 drm.service.enabled=1
+vidc.enc.narrow.searchrange=1
 
 # NITZ
 persist.rild.nitz_plmn=
